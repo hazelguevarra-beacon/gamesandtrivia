@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck Race Trivia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🦆 Duck Race Trivia</h1>
+
+    <div id="join-screen">
+      <input id="playerName" placeholder="Enter your name" />
+      <select id="category">
+        <option value="dinosaurs">🦖 Dinosaurs</option>
+        <option value="countries">🌍 Guess the Country</option>
+        <option value="brands">🏷️ Guess the Brand Logo</option>
+        <option value="persons">👩‍🎤 Guess the Person</option>
+        <option value="cars">🚗 Guess the Car Brand</option>
+      </select>
+      <button id="joinBtn">Join Game</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+      <div id="question-box">
+        <h2 id="question">Loading question...</h2>
+        <input id="answer" placeholder="Type your answer..." />
+        <button id="submitAnswer">Submit</button>
+      </div>
+
+      <div class="race-track">
+        <div class="lane" id="lane1"><img id="duck1" class="duck" src="https://i.imgur.com/2nCt3Sbl.png"></div>
+        <div class="lane" id="lane2"><img id="duck2" class="duck" src="https://i.imgur.com/2nCt3Sbl.png"></div>
+      </div>
+      <h2 id="winner"></h2>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

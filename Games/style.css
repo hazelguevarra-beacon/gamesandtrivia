@@ -1,0 +1,60 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #9be2fe 0%, #67d1fb 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.race-track {
+  width: 90%;
+  height: 150px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.lane {
+  border-top: 2px dashed #ccc;
+  border-bottom: 2px dashed #ccc;
+  height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.duck {
+  position: absolute;
+  height: 50px;
+  top: 5px;
+  left: 0;
+  transition: left 0.3s;
+}
+
+input, select, button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+button {
+  background-color: #ffcb05;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f5b700;
+}
