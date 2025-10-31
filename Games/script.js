@@ -118,3 +118,4 @@ function updateRace(players) {
     if (pos >= finishLine) winnerEl.textContent = `🏆 ${n} wins the race!`;
   });
 }
+
